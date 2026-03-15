@@ -50,9 +50,10 @@ services:
     name: finmind-redis
     plan: free
     maxmemoryPolicy: allkeys-lru
+    ipAllowList: []
 
-  - type: pserv
-    name: finmind-postgres
+databases:
+  - name: finmind-postgres
     plan: free
     postgresMajorVersion: "16"
     ipAllowList: []
