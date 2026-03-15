@@ -1,14 +1,1 @@
-# Live previews
-
-This file is the fill-in sheet for provider URLs. If provider credentials are not available on the current machine, keep the URL fields empty and use the deploy commands below when a provider session is ready.
-
-| Platform | Deploy command | Frontend URL | API URL | Health URL | Notes |
-| --- | --- | --- | --- | --- | --- |
-| Render | Blueprint via `render.yaml` | — | — | — | Free-tier compatible through `dockerCommand` init path |
-| DigitalOcean App Platform | `./deploy/digitalocean/app-platform/deploy.sh --spec deploy/digitalocean/app-platform/app.yaml` | — | — | — | `PRE_DEPLOY` migration job closes init-db |
-| AWS ECS Fargate | `./deploy/aws/deploy.sh` | — | — | — | Full-stack image behind ALB |
-| GCP Cloud Run | `./deploy/gcp/deploy.sh` | — | — | — | Full-stack image served same-origin |
-| Azure Container Apps | `./deploy/azure/deploy.sh` | — | — | — | Full-stack image served same-origin |
-| Railway | Railway project from `railway.toml` | — | — | — | Uses pre-deploy `init-db` command |
-| Heroku | Heroku container app from `heroku.yml` + `app.json` | — | — | — | Uses release phase for `init-db` |
-| Fly.io | `./deploy/fly/deploy.sh` | — | — | — | Parameterized backend/frontend app names |
+IyBMaXZlIHByZXZpZXdzCgpUaGlzIGZpbGUgaXMgdGhlIGZpbGwtaW4gc2hlZXQgZm9yIHByb3ZpZGVyIFVSTHMuIElmIHByb3ZpZGVyIGNyZWRlbnRpYWxzIGFyZSBub3QgYXZhaWxhYmxlIG9uIHRoZSBjdXJyZW50IG1hY2hpbmUsIGtlZXAgdGhlIFVSTCBmaWVsZHMgZW1wdHkgYW5kIHVzZSB0aGUgZGVwbG95IGNvbW1hbmRzIGJlbG93IHdoZW4gYSBwcm92aWRlciBzZXNzaW9uIGlzIHJlYWR5LgoKfCBQbGF0Zm9ybSB8IERlcGxveSBjb21tYW5kIHwgRnJvbnRlbmQgVVJMIHwgQVBJIFVSTCB8IEhlYWx0aCBVUkwgfCBOb3RlcyB8CnwgLS0tIHwgLS0tIHwgLS0tIHwgLS0tIHwgLS0tIHwgLS0tIHwKfCBSZW5kZXIgfCBCbHVlcHJpbnQgdmlhIGByZW5kZXIueWFtbGAgfCBgaHR0cHM6Ly9maW5taW5kLWZyb250ZW5kLXNleHMub25yZW5kZXIuY29tYCB8IGBodHRwczovL2Zpbm1pbmQtYmFja2VuZC1odDQzLm9ucmVuZGVyLmNvbWAgfCBgaHR0cHM6Ly9maW5taW5kLWJhY2tlbmQtaHQ0My5vbnJlbmRlci5jb20vaGVhbHRoL3JlYWR5YCB8IFByb3ZpZGVyLXZhbGlkYXRlZCBvbiBgYTYyMmUwM2A7IHByb29mIHBhY2sgaW4gYGRvY3MvYm91bnR5L3Byb3ZpZGVyLXByb29mcy9yZW5kZXIvYCB8CnwgRGlnaXRhbE9jZWFuIEFwcCBQbGF0Zm9ybSB8IGAuL2RlcGxveS9kaWdpdGFsb2NlYW4vYXBwLXBsYXRmb3JtL2RlcGxveS5zaCAtLXNwZWMgZGVwbG95L2RpZ2l0YWxvY2Vhbi9hcHAtcGxhdGZvcm0vYXBwLnlhbWxgIHwg4oCUIHwg4oCUIHwg4oCUIHwgYFBSRV9ERVBMT1lgIG1pZ3JhdGlvbiBqb2IgY2xvc2VzIGluaXQtZGIgfAp8IEFXUyBFQ1MgRmFyZ2F0ZSB8IGAuL2RlcGxveS9hd3MvZGVwbG95LnNoYCB8IOKAlCB8IOKAlCB8IOKAlCB8IEZ1bGwtc3RhY2sgaW1hZ2UgYmVoaW5kIEFMQiB8CnwgR0NQIENsb3VkIFJ1biB8IGAuL2RlcGxveS9nY3AvZGVwbG95LnNoYCB8IOKAlCB8IOKAlCB8IOKAlCB8IEZ1bGwtc3RhY2sgaW1hZ2Ugc2VydmVkIHNhbWUtb3JpZ2luIHwKfCBBenVyZSBDb250YWluZXIgQXBwcyB8IGAuL2RlcGxveS9henVyZS9kZXBsb3kuc2hgIHwg4oCUIHwg4oCUIHwg4oCUIHwgRnVsbC1zdGFjayBpbWFnZSBzZXJ2ZWQgc2FtZS1vcmlnaW4gfAp8IFJhaWx3YXkgfCBSYWlsd2F5IHByb2plY3QgZnJvbSBgcmFpbHdheS50b21sYCB8IOKAlCB8IOKAlCB8IOKAlCB8IFVzZXMgcHJlLWRlcGxveSBgaW5pdC1kYmAgY29tbWFuZCB8CnwgSGVyb2t1IHwgSGVyb2t1IGNvbnRhaW5lciBhcHAgZnJvbSBgaGVyb2t1LnltbGAgKyBgYXBwLmpzb25gIHwg4oCUIHwg4oCUIHwg4oCUIHwgVXNlcyByZWxlYXNlIHBoYXNlIGZvciBgaW5pdC1kYmAgfAp8IEZseS5pbyB8IGAuL2RlcGxveS9mbHkvZGVwbG95LnNoYCB8IOKAlCB8IOKAlCB8IOKAlCB8IFBhcmFtZXRlcml6ZWQgYmFja2VuZC9mcm9udGVuZCBhcHAgbmFtZXMgfAo=
