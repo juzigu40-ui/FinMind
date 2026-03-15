@@ -1,8 +1,19 @@
 # Maintainer review walkthrough
 
-This file is the shortest route through the acceptance material for `#308`.
+This is the shortest route through the acceptance material for `#308`.
 
-## 1. Local review
+## 1. Maintainer-requested free-platform one-click proof (Render)
+
+- Branch-specific Deploy to Render link: `https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2Fjuzigu40-ui%2FFinMind%2Ftree%2Fcodex%2Ffinmind-144-deploy-bounty`
+- Frontend URL: `https://finmind-frontend-sexs.onrender.com`
+- Health URL: `https://finmind-backend-ht43.onrender.com/health/ready`
+- Proof pack: `docs/bounty/provider-proofs/render/`
+- Hosted deploy proof video: `docs/demo/render-one-click-deploy-proof.mp4`
+- Free-tier note: Render may cold-start after idle, so the first request can take longer than a warm check.
+
+The current Render proof pack is tied to deployed commit `f5667cd`, not the earlier `a622e03` sync. The archived `a622e03` artifacts live under `docs/bounty/provider-proofs/render/archived/a622e03/`.
+
+## 2. Local review
 
 Run:
 
@@ -19,7 +30,7 @@ That verifies:
 - auth plus the core product modules
 - Prometheus and Grafana health
 
-## 2. K8s runtime
+## 3. K8s runtime
 
 Run:
 
@@ -35,7 +46,7 @@ Tilt uses the same repo path:
 tilt up
 ```
 
-## 3. Provider proofs
+## 4. Provider proofs
 
 Provider entry points live here:
 
@@ -54,20 +65,9 @@ All hosted rechecks converge on:
   --api-base-url <url>
 ```
 
-## 4. Live previews
+## 5. Supporting files
 
-Use these companion files while filling provider evidence:
-
-- `docs/bounty/live-previews.md`
-- `docs/bounty/provider-proof-template.md`
-
-Current hosted proof on this branch:
-
-- Render frontend: `https://finmind-frontend-sexs.onrender.com`
-- Render health: `https://finmind-backend-ht43.onrender.com/health/ready`
-- Proof pack: `docs/bounty/provider-proofs/render/`
-
-## 5. Demo assets
-
-- Video: `docs/demo/finmind-deploy-demo.mp4`
-- Screenshots: `docs/demo/`
+- Acceptance matrix: `docs/bounty/acceptance-matrix.md`
+- Live previews worksheet: `docs/bounty/live-previews.md`
+- Provider proof worksheet: `docs/bounty/provider-proof-template.md`
+- Secondary product walkthrough: `docs/demo/finmind-deploy-demo.mp4`

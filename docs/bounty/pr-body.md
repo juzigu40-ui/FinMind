@@ -2,13 +2,27 @@
 
 Discord coordination for `#144` is in place. If the maintainer wants the Discord record mirrored on GitHub, the screenshot note is prepared in `docs/bounty/discord-proof-comment.md`.
 
-Current submission head: `39f6d2d`
+Current submission head: `f5667cd`
 
 ## Current checks
 
-- CI: [23118014983](https://github.com/juzigu40-ui/FinMind/actions/runs/23118014983)
-- Deploy Artifacts: [23118014995](https://github.com/juzigu40-ui/FinMind/actions/runs/23118014995)
-- CodeQL: [23118014997](https://github.com/juzigu40-ui/FinMind/actions/runs/23118014997)
+- CI: [23118157473](https://github.com/juzigu40-ui/FinMind/actions/runs/23118157473)
+- Deploy Artifacts: [23118157478](https://github.com/juzigu40-ui/FinMind/actions/runs/23118157478)
+- CodeQL: [23118157472](https://github.com/juzigu40-ui/FinMind/actions/runs/23118157472)
+
+## Maintainer-requested free-platform one-click proof (Render)
+
+- Branch-specific Deploy to Render link: `https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2Fjuzigu40-ui%2FFinMind%2Ftree%2Fcodex%2Ffinmind-144-deploy-bounty`
+- Deployed commit: `f5667cd`
+- Frontend URL: `https://finmind-frontend-sexs.onrender.com`
+- API URL: `https://finmind-backend-ht43.onrender.com`
+- Health URL: `https://finmind-backend-ht43.onrender.com/health/ready`
+- Smoke log: [docs/bounty/provider-proofs/render/smoke.log](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/smoke.log)
+- UI validation log: [docs/bounty/provider-proofs/render/ui.log](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/ui.log)
+- Screenshot: [docs/bounty/provider-proofs/render/render-2026-03-16-f5667cd.png](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/render-2026-03-16-f5667cd.png)
+- Metadata: [docs/bounty/provider-proofs/render/metadata.txt](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/metadata.txt)
+- Hosted deploy proof video: [docs/demo/render-one-click-deploy-proof.mp4](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/demo/render-one-click-deploy-proof.mp4)
+- Free-tier note: Render may cold-start after idle, so the first request can take longer than a warm check.
 
 ## Acceptance entry page
 
@@ -24,69 +38,17 @@ Current submission head: `39f6d2d`
 | GCP Cloud Run | `./deploy/gcp/deploy.sh` | `./deploy/gcp/validate.sh --frontend-url <url> --api-url <url>` | `Repo-ready` | — |
 | Azure Container Apps | `./deploy/azure/deploy.sh` | `./deploy/azure/validate.sh --frontend-url <url> --api-url <url>` | `Repo-ready` | — |
 
-## Hosted proof carried by this submission
-
-- Provider: `Render`
-- Proof commit: `a622e03`
-- Frontend URL: `https://finmind-frontend-sexs.onrender.com`
-- API URL: `https://finmind-backend-ht43.onrender.com`
-- Health URL: `https://finmind-backend-ht43.onrender.com/health/ready`
-- Smoke log: [docs/bounty/provider-proofs/render/smoke.log](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/smoke.log)
-- UI validation log: [docs/bounty/provider-proofs/render/ui.log](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/ui.log)
-- Screenshot: [docs/bounty/provider-proofs/render/render-2026-03-15-a622e03.png](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/render-2026-03-15-a622e03.png)
-- Metadata: [docs/bounty/provider-proofs/render/metadata.txt](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/metadata.txt)
-
 ## Review files
 
 - Acceptance matrix: [docs/bounty/acceptance-matrix.md](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/acceptance-matrix.md)
 - Live previews worksheet: [docs/bounty/live-previews.md](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/live-previews.md)
 - Provider proof worksheet: [docs/bounty/provider-proof-template.md](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proof-template.md)
 - Maintainer walkthrough: [docs/demo/maintainer-review-walkthrough.md](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/demo/maintainer-review-walkthrough.md)
-- Demo video: [docs/demo/finmind-deploy-demo.mp4](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/demo/finmind-deploy-demo.mp4)
+- Secondary product walkthrough: [docs/demo/finmind-deploy-demo.mp4](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/demo/finmind-deploy-demo.mp4)
 
 ## What changed in the submission path
 
 - Hosted validation now converges on `./scripts/validate-public-deployment.sh`, so the same smoke and UI path can be reused across public deployments.
-- Render closes `init-db` through `dockerCommand` plus `FINMIND_RUN_INIT_DB_ON_BOOT=1`, which keeps the path free-tier compatible.
-- DigitalOcean App Platform closes `init-db` with a `PRE_DEPLOY` migration job and uses provider-native public URL wiring for backend CORS and frontend API resolution.
-- DigitalOcean Droplet now deploys the requested repo, ref, and optional commit SHA, leaves first checkout stopped by default, and only validates when explicitly requested.
-- AWS ECS Fargate, GCP Cloud Run, and Azure Container Apps now each have concrete deploy, validate, and destroy scripts in-repo.
-- The K8s runtime path now runs Helm plus Tilt in workflow instead of stopping at template output.
-
-## Visual walkthrough
-
-Current demo video: `docs/demo/finmind-deploy-demo.mp4`
-
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://raw.githubusercontent.com/juzigu40-ui/FinMind/codex/finmind-144-deploy-bounty/docs/demo/pr-readiness.jpg" alt="Readiness check" width="100%" />
-      <br />
-      <sub>Readiness first: database and Redis are both connected before the UI flow starts.</sub>
-    </td>
-    <td width="50%" align="center">
-      <img src="https://raw.githubusercontent.com/juzigu40-ui/FinMind/codex/finmind-144-deploy-bounty/docs/demo/pr-signup.jpg" alt="Signup flow" width="100%" />
-      <br />
-      <sub>Fresh signup in the same run, so the walkthrough does not depend on preloaded data.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://raw.githubusercontent.com/juzigu40-ui/FinMind/codex/finmind-144-deploy-bounty/docs/demo/pr-bills.jpg" alt="Bills flow" width="100%" />
-      <br />
-      <sub>Bill creation happens live before reminders are scheduled.</sub>
-    </td>
-    <td width="50%" align="center">
-      <img src="https://raw.githubusercontent.com/juzigu40-ui/FinMind/codex/finmind-144-deploy-bounty/docs/demo/pr-expenses.jpg" alt="Expenses flow" width="100%" />
-      <br />
-      <sub>Expense entry is committed and appears in the list during the same recording.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://raw.githubusercontent.com/juzigu40-ui/FinMind/codex/finmind-144-deploy-bounty/docs/demo/pr-analytics.jpg" alt="Analytics flow" width="100%" />
-      <br />
-      <sub>The walkthrough ends in analytics after the earlier data path has already been exercised.</sub>
-    </td>
-  </tr>
-</table>
+- The hosted proof logs now carry provider, deployed commit, UTC timestamp, URLs, readiness JSON, and module/path summaries instead of a one-line pass.
+- Render is now the primary hosted proof on the first screen, with a dedicated proof video focused on the free-platform one-click path rather than only the product walkthrough.
+- The older `a622e03` Render artifacts were archived under `docs/bounty/provider-proofs/render/archived/a622e03/` so they do not remain the primary proof set.

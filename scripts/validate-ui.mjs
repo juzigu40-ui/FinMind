@@ -39,6 +39,10 @@ function parseArgs(argv) {
         options.providerName = value;
         index += 1;
         break;
+      case '--commit-sha':
+        options.commitSha = value;
+        index += 1;
+        break;
       case '--record-video':
         options.recordVideoPath = value;
         index += 1;
@@ -65,6 +69,11 @@ function parseArgs(argv) {
 
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function logStep(message) {
+  const stamp = new Date().toISOString();
+  console.log(`[${stamp}] ${message}`);
 }
 
 async function humanType(page, selector, value, delayMs = 85) {
@@ -235,6 +244,7 @@ export async function runUiValidation({
   baseUrl,
   healthUrl,
   providerName = 'deployment',
+  commitSha,
   recordVideoPath,
   screenshotDir,
 }) {
@@ -278,7 +288,16 @@ export async function runUiValidation({
     .toISOString()
     .slice(0, 10);
 
+  logStep(`provider=${providerName}`);
+  if (commitSha) {
+    logStep(`commit_sha=${commitSha}`);
+  }
+  logStep(`validated_at_utc=${new Date().toISOString()}`);
+  logStep(`frontend_url=${baseUrl}`);
+  logStep(`health_url=${healthUrl}`);
+
   try {
+    logStep('step=readiness');
     await page.goto(`${baseUrl}/`, { waitUntil: 'domcontentloaded' });
     await page.setContent(buildHealthCheckPage(healthUrl, providerName), {
       waitUntil: 'domcontentloaded',
@@ -288,7 +307,9 @@ export async function runUiValidation({
     });
     await delay(2200);
     await maybeScreenshot(page, screenshotDir, 'readiness.png');
+    logStep('step=readiness ok');
 
+    logStep('step=signup');
     await page.goto(`${baseUrl}/`, { waitUntil: 'domcontentloaded' });
     await waitForQuietUi(page);
 
@@ -305,10 +326,12 @@ export async function runUiValidation({
     await page.getByRole('button', { name: /Create account/i }).click();
     await waitForDashboard(page);
     await maybeScreenshot(page, screenshotDir, 'signup.png');
+    logStep('step=signup ok');
     await slowScroll(page, 700);
     await delay(500);
     await slowScroll(page, -700);
 
+    logStep('step=bills');
     await primaryNavLink(page, 'Bills').click();
     await page.getByRole('heading', { name: /Bill Management/i }).waitFor();
     await delay(1200);
@@ -324,7 +347,9 @@ export async function runUiValidation({
     await page.getByText(billName).waitFor();
     await delay(1500);
     await maybeScreenshot(page, screenshotDir, 'bills.png');
+    logStep('step=bills ok');
 
+    logStep('step=reminders');
     await primaryNavLink(page, 'Reminders').click();
     await page.getByRole('heading', { name: /^Reminders$/i }).waitFor();
     await delay(1200);
@@ -334,7 +359,9 @@ export async function runUiValidation({
     await delay(350);
     await page.getByRole('button', { name: /Schedule Bill Reminders/i }).click();
     await delay(1800);
+    logStep('step=reminders ok');
 
+    logStep('step=expenses');
     await primaryNavLink(page, 'Expenses').click();
     await page.getByRole('heading', { name: /^Expenses$/i }).waitFor();
     await delay(1200);
@@ -345,10 +372,12 @@ export async function runUiValidation({
     await page.getByRole('button', { name: /Save Expense/i }).click();
     await delay(1800);
     await maybeScreenshot(page, screenshotDir, 'expenses.png');
+    logStep('step=expenses ok');
     await slowScroll(page, 420);
     await delay(400);
     await slowScroll(page, -420);
 
+    logStep('step=insights');
     await primaryNavLink(page, 'Analytics').click();
     await page.getByRole('heading', { name: /Financial Analytics/i }).waitFor();
     await delay(1600);
@@ -361,6 +390,7 @@ export async function runUiValidation({
     await slowScroll(page, 500);
     await delay(1000);
     await maybeScreenshot(page, screenshotDir, 'analytics.png');
+    logStep('step=insights ok');
   } finally {
     await context.close();
     await browser.close();
@@ -384,6 +414,7 @@ async function main() {
   }
 
   console.log(`FinMind UI validation passed for ${options.providerName}`);
+  console.log('ui_path=readiness -> signup -> dashboard -> bills -> reminders -> expenses -> insights');
 }
 
 main().catch((error) => {
