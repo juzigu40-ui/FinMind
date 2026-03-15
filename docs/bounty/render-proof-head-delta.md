@@ -4,13 +4,14 @@ Base proof commit:
 `63ab7de`
 
 Current branch head covered by this note:
-`dc97f81`
+`b6e2110`
 
-## Commits between `63ab7de` and `dc97f81`
+## Commits between `63ab7de` and `b6e2110`
 
 - `dc97f81` `docs: refresh render proof to 63ab7de`
+- `b6e2110` `docs: add render proof head delta`
 
-## Files changed between `63ab7de` and `dc97f81`
+## Files changed between `63ab7de` and `b6e2110`
 
 - `docs/bounty/acceptance-matrix.md`
 - `docs/bounty/final-discord-message.md`
@@ -30,6 +31,7 @@ Current branch head covered by this note:
 - `docs/bounty/provider-proofs/render/render-2026-03-16-63ab7de.png`
 - `docs/bounty/provider-proofs/render/smoke.log`
 - `docs/bounty/provider-proofs/render/ui.log`
+- `docs/bounty/render-proof-head-delta.md`
 - `docs/demo/maintainer-review-walkthrough.md`
 - `docs/demo/render-one-click-deploy-proof.mp4`
 
