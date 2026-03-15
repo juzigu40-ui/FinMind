@@ -1,1 +1,92 @@
-IyBCb3VudHkgU3VibWlzc2lvbjogVW5pdmVyc2FsIE9uZS1DbGljayBEZXBsb3ltZW50IChEb2NrZXIgKyBLOHMgKyBUaWx0KSBmb3IgRmluTWluZAoKRGlzY29yZCBjb29yZGluYXRpb24gZm9yIGAjMTQ0YCBpcyBpbiBwbGFjZS4gSWYgdGhlIG1haW50YWluZXIgd2FudHMgdGhlIERpc2NvcmQgcmVjb3JkIG1pcnJvcmVkIG9uIEdpdEh1YiwgdGhlIHNjcmVlbnNob3Qgbm90ZSBpcyBwcmVwYXJlZCBpbiBgZG9jcy9ib3VudHkvZGlzY29yZC1wcm9vZi1jb21tZW50Lm1kYC4KCkN1cnJlbnQgc3VibWlzc2lvbiBoZWFkOiBgYTYyMmUwM2AKCiMjIEN1cnJlbnQgY2hlY2tzCgotIENJOiBbMjMxMTc2MDcxODldKGh0dHBzOi8vZ2l0aHViLmNvbS9qdXppZ3U0MC11aS9GaW5NaW5kL2FjdGlvbnMvcnVucy8yMzExNzYwNzE4OSkKLSBEZXBsb3kgQXJ0aWZhY3RzOiBbMjMxMTc2MDcxODddKGh0dHBzOi8vZ2l0aHViLmNvbS9qdXppZ3U0MC11aS9GaW5NaW5kL2FjdGlvbnMvcnVucy8yMzExNzYwNzE4NykKLSBDb2RlUUw6IFsyMzExNzYwNzIwMV0oaHR0cHM6Ly9naXRodWIuY29tL2p1emlndTQwLXVpL0Zpbk1pbmQvYWN0aW9ucy9ydW5zLzIzMTE3NjA3MjAxKQoKIyMgQWNjZXB0YW5jZSBlbnRyeSBwYWdlCgp8IFBsYXRmb3JtIHwgRGVwbG95IGNvbW1hbmQgfCBWYWxpZGF0ZSBjb21tYW5kIHwgUHJvb2Ygc3RhdHVzIHwgTGl2ZSBVUkwgfAp8IC0tLSB8IC0tLSB8IC0tLSB8IC0tLSB8IC0tLSB8CnwgUHJvZHVjdGlvbiBDb21wb3NlIHwgYC4vc2NyaXB0cy9yZXZpZXctZGVwbG95LnNoYCB8IGAuL3NjcmlwdHMvcmV2aWV3LWRlcGxveS5zaGAgfCBgQ0ktdmFsaWRhdGVkYCB8IExvY2FsIG9ubHkgfAp8IEt1YmVybmV0ZXMgLyBIZWxtIHwgYC4vc2NyaXB0cy9yZXZpZXctazhzLnNoYCB8IGBoZWxtIHRlc3QgZmlubWluZCAtbiBmaW5taW5kIC0tbG9nc2AgfCBgQ0ktdmFsaWRhdGVkYCB8IExvY2FsIG9ubHkgfAp8IFRpbHQgfCBgdGlsdCB1cGAgfCBgdGlsdCBjaSAtLXRpbWVvdXQgMTBtYCB8IGBDSS12YWxpZGF0ZWRgIHwgTG9jYWwgb25seSB8CnwgUmVuZGVyIHwgQmx1ZXByaW50OiBgcmVuZGVyLnlhbWxgIHwgYC4vZGVwbG95L3JlbmRlci92YWxpZGF0ZS5zaCAtLWZyb250ZW5kLXVybCBodHRwczovL2Zpbm1pbmQtZnJvbnRlbmQtc2V4cy5vbnJlbmRlci5jb20gLS1hcGktdXJsIGh0dHBzOi8vZmlubWluZC1iYWNrZW5kLWh0NDMub25yZW5kZXIuY29tYCB8IGBQcm92aWRlci12YWxpZGF0ZWRgIHwgYGh0dHBzOi8vZmlubWluZC1mcm9udGVuZC1zZXhzLm9ucmVuZGVyLmNvbWAgfAp8IERpZ2l0YWxPY2VhbiBBcHAgUGxhdGZvcm0gfCBgLi9kZXBsb3kvZGlnaXRhbG9jZWFuL2FwcC1wbGF0Zm9ybS9kZXBsb3kuc2ggLS1zcGVjIGRlcGxveS9kaWdpdGFsb2NlYW4vYXBwLXBsYXRmb3JtL2FwcC55YW1sYCB8IGAuL2RlcGxveS9kaWdpdGFsb2NlYW4vYXBwLXBsYXRmb3JtL3ZhbGlkYXRlLnNoIC0tZnJvbnRlbmQtdXJsIDx1cmw+IC0tYXBpLXVybCA8dXJsPmAgfCBgUmVwby1yZWFkeWAgfCDigJQgfAp8IERpZ2l0YWxPY2VhbiBEcm9wbGV0IHwgYEFVVE9fU1RBUlQ9MSAuL2RlcGxveS9kaWdpdGFsb2NlYW4vZHJvcGxldC9zZXR1cC5zaGAgfCBgQVVUT19TVEFSVD0xIEFVVE9fVkFMSURBVEU9MSAuL2RlcGxveS9kaWdpdGFsb2NlYW4vZHJvcGxldC9zZXR1cC5zaGAgfCBgUmVwby1yZWFkeWAgfCDigJQgfAp8IEFXUyBFQ1MgRmFyZ2F0ZSB8IGAuL2RlcGxveS9hd3MvZGVwbG95LnNoYCB8IGAuL2RlcGxveS9hd3MvdmFsaWRhdGUuc2ggLS1mcm9udGVuZC11cmwgPHVybD4gLS1hcGktdXJsIDx1cmw+YCB8IGBSZXBvLXJlYWR5YCB8IOKAlCB8CnwgR0NQIENsb3VkIFJ1biB8IGAuL2RlcGxveS9nY3AvZGVwbG95LnNoYCB8IGAuL2RlcGxveS9nY3AvdmFsaWRhdGUuc2ggLS1mcm9udGVuZC11cmwgPHVybD4gLS1hcGktdXJsIDx1cmw+YCB8IGBSZXBvLXJlYWR5YCB8IOKAlCB8CnwgQXp1cmUgQ29udGFpbmVyIEFwcHMgfCBgLi9kZXBsb3kvYXp1cmUvZGVwbG95LnNoYCB8IGAuL2RlcGxveS9henVyZS92YWxpZGF0ZS5zaCAtLWZyb250ZW5kLXVybCA8dXJsPiAtLWFwaS11cmwgPHVybD5gIHwgYFJlcG8tcmVhZHlgIHwg4oCUIHwKCiMjIEhvc3RlZCBwcm9vZiBjYXB0dXJlZCBvbiB0aGlzIGhlYWQKCi0gUHJvdmlkZXI6IGBSZW5kZXJgCi0gRnJvbnRlbmQgVVJMOiBgaHR0cHM6Ly9maW5taW5kLWZyb250ZW5kLXNleHMub25yZW5kZXIuY29tYAotIEFQSSBVUkw6IGBodHRwczovL2Zpbm1pbmQtYmFja2VuZC1odDQzLm9ucmVuZGVyLmNvbWAKLSBIZWFsdGggVVJMOiBgaHR0cHM6Ly9maW5taW5kLWJhY2tlbmQtaHQ0My5vbnJlbmRlci5jb20vaGVhbHRoL3JlYWR5YAotIFNtb2tlIGxvZzogYGRvY3MvYm91bnR5L3Byb3ZpZGVyLXByb29mcy9yZW5kZXIvc21va2UubG9nYAotIFVJIHZhbGlkYXRpb24gbG9nOiBgZG9jcy9ib3VudHkvcHJvdmlkZXItcHJvb2ZzL3JlbmRlci91aS5sb2dgCi0gU2NyZWVuc2hvdDogYGRvY3MvYm91bnR5L3Byb3ZpZGVyLXByb29mcy9yZW5kZXIvcmVuZGVyLTIwMjYtMDMtMTUtYTYyMmUwMy5wbmdgCi0gTWV0YWRhdGE6IGBkb2NzL2JvdW50eS9wcm92aWRlci1wcm9vZnMvcmVuZGVyL21ldGFkYXRhLnR4dGAKCiMjIFJldmlldyBmaWxlcwoKLSBBY2NlcHRhbmNlIG1hdHJpeDogW2RvY3MvYm91bnR5L2FjY2VwdGFuY2UtbWF0cml4Lm1kXShodHRwczovL2dpdGh1Yi5jb20vanV6aWd1NDAtdWkvRmluTWluZC9ibG9iL2NvZGV4L2Zpbm1pbmQtMTQ0LWRlcGxveS1ib3VudHkvZG9jcy9ib3VudHkvYWNjZXB0YW5jZS1tYXRyaXgubWQpCi0gTGl2ZSBwcmV2aWV3cyB3b3Jrc2hlZXQ6IFtkb2NzL2JvdW50eS9saXZlLXByZXZpZXdzLm1kXShodHRwczovL2dpdGh1Yi5jb20vanV6aWd1NDAtdWkvRmluTWluZC9ibG9iL2NvZGV4L2Zpbm1pbmQtMTQ0LWRlcGxveS1ib3VudHkvZG9jcy9ib3VudHkvbGl2ZS1wcmV2aWV3cy5tZCkKLSBQcm92aWRlciBwcm9vZiB3b3Jrc2hlZXQ6IFtkb2NzL2JvdW50eS9wcm92aWRlci1wcm9vZi10ZW1wbGF0ZS5tZF0oaHR0cHM6Ly9naXRodWIuY29tL2p1emlndTQwLXVpL0Zpbk1pbmQvYmxvYi9jb2RleC9maW5taW5kLTE0NC1kZXBsb3ktYm91bnR5L2RvY3MvYm91bnR5L3Byb3ZpZGVyLXByb29mLXRlbXBsYXRlLm1kKQotIE1haW50YWluZXIgd2Fsa3Rocm91Z2g6IFtkb2NzL2RlbW8vbWFpbnRhaW5lci1yZXZpZXctd2Fsa3Rocm91Z2gubWRdKGh0dHBzOi8vZ2l0aHViLmNvbS9qdXppZ3U0MC11aS9GaW5NaW5kL2Jsb2IvY29kZXgvZmlubWluZC0xNDQtZGVwbG95LWJvdW50eS9kb2NzL2RlbW8vbWFpbnRhaW5lci1yZXZpZXctd2Fsa3Rocm91Z2gubWQpCi0gRGVtbyB2aWRlbzogW2RvY3MvZGVtby9maW5taW5kLWRlcGxveS1kZW1vLm1wNF0oaHR0cHM6Ly9naXRodWIuY29tL2p1emlndTQwLXVpL0Zpbk1pbmQvYmxvYi9jb2RleC9maW5taW5kLTE0NC1kZXBsb3ktYm91bnR5L2RvY3MvZGVtby9maW5taW5kLWRlcGxveS1kZW1vLm1wNCkKCiMjIFdoYXQgY2hhbmdlZCBpbiB0aGUgc3VibWlzc2lvbiBwYXRoCgotIEhvc3RlZCB2YWxpZGF0aW9uIG5vdyBjb252ZXJnZXMgb24gYC4vc2NyaXB0cy92YWxpZGF0ZS1wdWJsaWMtZGVwbG95bWVudC5zaGAsIHNvIHRoZSBzYW1lIHNtb2tlIGFuZCBVSSBwYXRoIGNhbiBiZSByZXVzZWQgYWNyb3NzIHB1YmxpYyBkZXBsb3ltZW50cy4KLSBSZW5kZXIgY2xvc2VzIGBpbml0LWRiYCB0aHJvdWdoIGBkb2NrZXJDb21tYW5kYCBwbHVzIGBGSU5NSU5EX1JVTl9JTklUX0RCX09OX0JPT1Q9MWAsIHdoaWNoIGtlZXBzIHRoZSBwYXRoIGZyZWUtdGllciBjb21wYXRpYmxlLgotIERpZ2l0YWxPY2VhbiBBcHAgUGxhdGZvcm0gY2xvc2VzIGBpbml0LWRiYCB3aXRoIGEgYFBSRV9ERVBMT1lgIG1pZ3JhdGlvbiBqb2IgYW5kIHVzZXMgcHJvdmlkZXItbmF0aXZlIHB1YmxpYyBVUkwgd2lyaW5nIGZvciBiYWNrZW5kIENPUlMgYW5kIGZyb250ZW5kIEFQSSByZXNvbHV0aW9uLgotIERpZ2l0YWxPY2VhbiBEcm9wbGV0IG5vdyBkZXBsb3lzIHRoZSByZXF1ZXN0ZWQgcmVwbywgcmVmLCBhbmQgb3B0aW9uYWwgY29tbWl0IFNIQSwgbGVhdmVzIGZpcnN0IGNoZWNrb3V0IHN0b3BwZWQgYnkgZGVmYXVsdCwgYW5kIG9ubHkgdmFsaWRhdGVzIHdoZW4gZXhwbGljaXRseSByZXF1ZXN0ZWQuCi0gQVdTIEVDUyBGYXJnYXRlLCBHQ1AgQ2xvdWQgUnVuLCBhbmQgQXp1cmUgQ29udGFpbmVyIEFwcHMgbm93IGVhY2ggaGF2ZSBjb25jcmV0ZSBkZXBsb3ksIHZhbGlkYXRlLCBhbmQgZGVzdHJveSBzY3JpcHRzIGluLXJlcG8uCi0gVGhlIEs4cyBydW50aW1lIHBhdGggbm93IHJ1bnMgSGVsbSBwbHVzIFRpbHQgaW4gd29ya2Zsb3cgaW5zdGVhZCBvZiBzdG9wcGluZyBhdCB0ZW1wbGF0ZSBvdXRwdXQuCgojIyBWaXN1YWwgd2Fsa3Rocm91Z2gKCkN1cnJlbnQgZGVtbyB2aWRlbzogYGRvY3MvZGVtby9maW5taW5kLWRlcGxveS1kZW1vLm1wNGAKCjx0YWJsZT4KICA8dHI+CiAgICA8dGQgd2lkdGg9IjUwJSIgYWxpZ249ImNlbnRlciI+CiAgICAgIDxpbWcgc3JjPSJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vanV6aWd1NDAtdWkvRmluTWluZC9jb2RleC9maW5taW5kLTE0NC1kZXBsb3ktYm91bnR5L2RvY3MvZGVtby9wci1yZWFkaW5lc3MuanBnIiBhbHQ9IlJlYWRpbmVzcyBjaGVjayIgd2lkdGg9IjEwMCUiIC8+CiAgICAgIDxiciAvPgogICAgICA8c3ViPlJlYWRpbmVzcyBmaXJzdDogZGF0YWJhc2UgYW5kIFJlZGlzIGFyZSBib3RoIGNvbm5lY3RlZCBiZWZvcmUgdGhlIFVJIGZsb3cgc3RhcnRzLjwvc3ViPgogICAgPC90ZD4KICAgIDx0ZCB3aWR0aD0iNTAlIiBhbGlnbj0iY2VudGVyIj4KICAgICAgPGltZyBzcmM9Imh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9qdXppZ3U0MC11aS9GaW5NaW5kL2NvZGV4L2Zpbm1pbmQtMTQ0LWRlcGxveS1ib3VudHkvZG9jcy9kZW1vL3ByLXNpZ251cC5qcGciIGFsdD0iU2lnbnVwIGZsb3ciIHdpZHRoPSIxMDAlIiAvPgogICAgICA8YnIgLz4KICAgICAgPHN1Yj5GcmVzaCBzaWdudXAgaW4gdGhlIHNhbWUgcnVuLCBzbyB0aGUgd2Fsa3Rocm91Z2ggZG9lcyBub3QgZGVwZW5kIG9uIHByZWxvYWRlZCBkYXRhLjwvc3ViPgogICAgPC90ZD4KICA8L3RyPgogIDx0cj4KICAgIDx0ZCB3aWR0aD0iNTAlIiBhbGlnbj0iY2VudGVyIj4KICAgICAgPGltZyBzcmM9Imh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9qdXppZ3U0MC11aS9GaW5NaW5kL2NvZGV4L2Zpbm1pbmQtMTQ0LWRlcGxveS1ib3VudHkvZG9jcy9kZW1vL3ByLWJpbGxzLmpwZyIgYWx0PSJCaWxscyBmbG93IiB3aWR0aD0iMTAwJSIgLz4KICAgICAgPGJyIC8+CiAgICAgIDxzdWI+QmlsbCBjcmVhdGlvbiBoYXBwZW5zIGxpdmUgYmVmb3JlIHJlbWluZGVycyBhcmUgc2NoZWR1bGVkLjwvc3ViPgogICAgPC90ZD4KICAgIDx0ZCB3aWR0aD0iNTAlIiBhbGlnbj0iY2VudGVyIj4KICAgICAgPGltZyBzcmM9Imh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9qdXppZ3U0MC11aS9GaW5NaW5kL2NvZGV4L2Zpbm1pbmQtMTQ0LWRlcGxveS1ib3VudHkvZG9jcy9kZW1vL3ByLWV4cGVuc2VzLmpwZyIgYWx0PSJFeHBlbnNlcyBmbG93IiB3aWR0aD0iMTAwJSIgLz4KICAgICAgPGJyIC8+CiAgICAgIDxzdWI+RXhwZW5zZSBlbnRyeSBpcyBjb21taXR0ZWQgYW5kIGFwcGVhcnMgaW4gdGhlIGxpc3QgZHVyaW5nIHRoZSBzYW1lIHJlY29yZGluZy48L3N1Yj4KICAgIDwvdGQ+CiAgPC90cj4KICA8dHI+CiAgICA8dGQgY29sc3Bhbj0iMiIgYWxpZ249ImNlbnRlciI+CiAgICAgIDxpbWcgc3JjPSJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vanV6aWd1NDAtdWkvRmluTWluZC9jb2RleC9maW5taW5kLTE0NC1kZXBsb3ktYm91bnR5L2RvY3MvZGVtby9wci1hbmFseXRpY3MuanBnIiBhbHQ9IkFuYWx5dGljcyBmbG93IiB3aWR0aD0iMTAwJSIgLz4KICAgICAgPGJyIC8+CiAgICAgIDxzdWI+VGhlIHdhbGt0aHJvdWdoIGVuZHMgaW4gYW5hbHl0aWNzIGFmdGVyIHRoZSBlYXJsaWVyIGRhdGEgcGF0aCBoYXMgYWxyZWFkeSBiZWVuIGV4ZXJjaXNlZC48L3N1Yj4KICAgIDwvdGQ+CiAgPC90cj4KPC90YWJsZT4K
+# Bounty Submission: Universal One-Click Deployment (Docker + K8s + Tilt) for FinMind
+
+Discord coordination for `#144` is in place. If the maintainer wants the Discord record mirrored on GitHub, the screenshot note is prepared in `docs/bounty/discord-proof-comment.md`.
+
+Current submission head: `39f6d2d`
+
+## Current checks
+
+- CI: [23118014983](https://github.com/juzigu40-ui/FinMind/actions/runs/23118014983)
+- Deploy Artifacts: [23118014995](https://github.com/juzigu40-ui/FinMind/actions/runs/23118014995)
+- CodeQL: [23118014997](https://github.com/juzigu40-ui/FinMind/actions/runs/23118014997)
+
+## Acceptance entry page
+
+| Platform | Deploy command | Validate command | Proof status | Live URL |
+| --- | --- | --- | --- | --- |
+| Production Compose | `./scripts/review-deploy.sh` | `./scripts/review-deploy.sh` | `CI-validated` | Local only |
+| Kubernetes / Helm | `./scripts/review-k8s.sh` | `helm test finmind -n finmind --logs` | `CI-validated` | Local only |
+| Tilt | `tilt up` | `tilt ci --timeout 10m` | `CI-validated` | Local only |
+| Render | Blueprint: `render.yaml` | `./deploy/render/validate.sh --frontend-url https://finmind-frontend-sexs.onrender.com --api-url https://finmind-backend-ht43.onrender.com` | `Provider-validated` | `https://finmind-frontend-sexs.onrender.com` |
+| DigitalOcean App Platform | `./deploy/digitalocean/app-platform/deploy.sh --spec deploy/digitalocean/app-platform/app.yaml` | `./deploy/digitalocean/app-platform/validate.sh --frontend-url <url> --api-url <url>` | `Repo-ready` | — |
+| DigitalOcean Droplet | `AUTO_START=1 ./deploy/digitalocean/droplet/setup.sh` | `AUTO_START=1 AUTO_VALIDATE=1 ./deploy/digitalocean/droplet/setup.sh` | `Repo-ready` | — |
+| AWS ECS Fargate | `./deploy/aws/deploy.sh` | `./deploy/aws/validate.sh --frontend-url <url> --api-url <url>` | `Repo-ready` | — |
+| GCP Cloud Run | `./deploy/gcp/deploy.sh` | `./deploy/gcp/validate.sh --frontend-url <url> --api-url <url>` | `Repo-ready` | — |
+| Azure Container Apps | `./deploy/azure/deploy.sh` | `./deploy/azure/validate.sh --frontend-url <url> --api-url <url>` | `Repo-ready` | — |
+
+## Hosted proof carried by this submission
+
+- Provider: `Render`
+- Proof commit: `a622e03`
+- Frontend URL: `https://finmind-frontend-sexs.onrender.com`
+- API URL: `https://finmind-backend-ht43.onrender.com`
+- Health URL: `https://finmind-backend-ht43.onrender.com/health/ready`
+- Smoke log: [docs/bounty/provider-proofs/render/smoke.log](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/smoke.log)
+- UI validation log: [docs/bounty/provider-proofs/render/ui.log](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/ui.log)
+- Screenshot: [docs/bounty/provider-proofs/render/render-2026-03-15-a622e03.png](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/render-2026-03-15-a622e03.png)
+- Metadata: [docs/bounty/provider-proofs/render/metadata.txt](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render/metadata.txt)
+
+## Review files
+
+- Acceptance matrix: [docs/bounty/acceptance-matrix.md](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/acceptance-matrix.md)
+- Live previews worksheet: [docs/bounty/live-previews.md](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/live-previews.md)
+- Provider proof worksheet: [docs/bounty/provider-proof-template.md](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/bounty/provider-proof-template.md)
+- Maintainer walkthrough: [docs/demo/maintainer-review-walkthrough.md](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/demo/maintainer-review-walkthrough.md)
+- Demo video: [docs/demo/finmind-deploy-demo.mp4](https://github.com/juzigu40-ui/FinMind/blob/codex/finmind-144-deploy-bounty/docs/demo/finmind-deploy-demo.mp4)
+
+## What changed in the submission path
+
+- Hosted validation now converges on `./scripts/validate-public-deployment.sh`, so the same smoke and UI path can be reused across public deployments.
+- Render closes `init-db` through `dockerCommand` plus `FINMIND_RUN_INIT_DB_ON_BOOT=1`, which keeps the path free-tier compatible.
+- DigitalOcean App Platform closes `init-db` with a `PRE_DEPLOY` migration job and uses provider-native public URL wiring for backend CORS and frontend API resolution.
+- DigitalOcean Droplet now deploys the requested repo, ref, and optional commit SHA, leaves first checkout stopped by default, and only validates when explicitly requested.
+- AWS ECS Fargate, GCP Cloud Run, and Azure Container Apps now each have concrete deploy, validate, and destroy scripts in-repo.
+- The K8s runtime path now runs Helm plus Tilt in workflow instead of stopping at template output.
+
+## Visual walkthrough
+
+Current demo video: `docs/demo/finmind-deploy-demo.mp4`
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/juzigu40-ui/FinMind/codex/finmind-144-deploy-bounty/docs/demo/pr-readiness.jpg" alt="Readiness check" width="100%" />
+      <br />
+      <sub>Readiness first: database and Redis are both connected before the UI flow starts.</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/juzigu40-ui/FinMind/codex/finmind-144-deploy-bounty/docs/demo/pr-signup.jpg" alt="Signup flow" width="100%" />
+      <br />
+      <sub>Fresh signup in the same run, so the walkthrough does not depend on preloaded data.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/juzigu40-ui/FinMind/codex/finmind-144-deploy-bounty/docs/demo/pr-bills.jpg" alt="Bills flow" width="100%" />
+      <br />
+      <sub>Bill creation happens live before reminders are scheduled.</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/juzigu40-ui/FinMind/codex/finmind-144-deploy-bounty/docs/demo/pr-expenses.jpg" alt="Expenses flow" width="100%" />
+      <br />
+      <sub>Expense entry is committed and appears in the list during the same recording.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://raw.githubusercontent.com/juzigu40-ui/FinMind/codex/finmind-144-deploy-bounty/docs/demo/pr-analytics.jpg" alt="Analytics flow" width="100%" />
+      <br />
+      <sub>The walkthrough ends in analytics after the earlier data path has already been exercised.</sub>
+    </td>
+  </tr>
+</table>

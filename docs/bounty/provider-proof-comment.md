@@ -1,1 +1,12 @@
-QHJvaGl0ZGFzaDA4IGhvc3RlZCBwcm9vZiBpcyBub3cgYXR0YWNoZWQgZm9yIGAjMzA4YC4KCi0gUHJvdmlkZXI6IGBSZW5kZXJgCi0gQ29tbWl0OiBgYTYyMmUwM2AKLSBEZXBsb3kgY29tbWFuZDogQmx1ZXByaW50IHZpYSBgcmVuZGVyLnlhbWxgCi0gVmFsaWRhdGUgY29tbWFuZDogYC4vZGVwbG95L3JlbmRlci92YWxpZGF0ZS5zaCAtLWZyb250ZW5kLXVybCBodHRwczovL2Zpbm1pbmQtZnJvbnRlbmQtc2V4cy5vbnJlbmRlci5jb20gLS1hcGktdXJsIGh0dHBzOi8vZmlubWluZC1iYWNrZW5kLWh0NDMub25yZW5kZXIuY29tYAotIEZyb250ZW5kIFVSTDogYGh0dHBzOi8vZmlubWluZC1mcm9udGVuZC1zZXhzLm9ucmVuZGVyLmNvbWAKLSBIZWFsdGggVVJMOiBgaHR0cHM6Ly9maW5taW5kLWJhY2tlbmQtaHQ0My5vbnJlbmRlci5jb20vaGVhbHRoL3JlYWR5YAotIEFydGlmYWN0IHBhdGg6IGBkb2NzL2JvdW50eS9wcm92aWRlci1wcm9vZnMvcmVuZGVyL2AKLSBEZXN0cm95IHN0YXR1czogYG5vdCBkZXN0cm95ZWRgCgpUaGUgcHJvb2YgcGFjayBpbmNsdWRlcyB0aGUgc21va2UgbG9nLCBVSSB2YWxpZGF0aW9uIGxvZywgc2NyZWVuc2hvdCwgYW5kIG1ldGFkYXRhIGNhcHR1cmVkIGZyb20gdGhlIHNhbWUgZGVwbG95bWVudCBydW4uCg==
+@rohitdash08 hosted proof is now attached for `#308`.
+
+- Provider: `Render`
+- Commit: `a622e03`
+- Deploy command: Blueprint via `render.yaml`
+- Validate command: `./deploy/render/validate.sh --frontend-url https://finmind-frontend-sexs.onrender.com --api-url https://finmind-backend-ht43.onrender.com`
+- Frontend URL: `https://finmind-frontend-sexs.onrender.com`
+- Health URL: `https://finmind-backend-ht43.onrender.com/health/ready`
+- Artifact path: [docs/bounty/provider-proofs/render/](https://github.com/juzigu40-ui/FinMind/tree/codex/finmind-144-deploy-bounty/docs/bounty/provider-proofs/render)
+- Destroy status: `not destroyed`
+
+The proof pack includes the smoke log, UI validation log, screenshot, and metadata captured from the same deployment run.
