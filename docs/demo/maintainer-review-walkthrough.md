@@ -11,7 +11,7 @@ This is the shortest route through the acceptance material for `#308`.
 - Hosted deploy proof video: `docs/demo/render-one-click-deploy-proof.mp4`
 - Free-tier note: Render may cold-start after idle, so the first request can take longer than a warm check.
 
-The current Render proof pack is tied to deployed commit `f5667cd`, not the earlier `a622e03` sync. The archived `a622e03` artifacts live under `docs/bounty/provider-proofs/render/archived/a622e03/`.
+The current Render proof pack is tied to deployed commit `63ab7de`. The archived `a622e03` and `f5667cd` artifacts remain under `docs/bounty/provider-proofs/render/archived/`.
 
 ## 2. Local review
 
@@ -31,6 +31,8 @@ That verifies:
 - Prometheus and Grafana health
 
 ## 3. K8s runtime
+
+Current passing workflow run: `https://github.com/juzigu40-ui/FinMind/actions/runs/23119973032`
 
 Run:
 
