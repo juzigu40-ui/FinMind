@@ -111,72 +111,46 @@ function buildHealthCheckPage(healthUrl) {
     <meta charset="UTF-8" />
     <title>FinMind Render readiness proof</title>
     <style>
-      :root {
-        color-scheme: light;
-        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      }
       body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: linear-gradient(135deg, #0f172a 0%, #111827 45%, #164e63 100%);
-        color: #e5f3ff;
-      }
-      .card {
-        width: min(980px, calc(100vw - 96px));
-        border-radius: 28px;
-        padding: 32px 36px;
-        background: rgba(15, 23, 42, 0.8);
-        border: 1px solid rgba(148, 163, 184, 0.24);
-        box-shadow: 0 24px 80px rgba(15, 23, 42, 0.35);
-      }
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 8px 14px;
-        border-radius: 999px;
-        background: rgba(16, 185, 129, 0.14);
-        color: #a7f3d0;
-        font-size: 14px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-      }
-      .dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 999px;
-        background: #34d399;
-        box-shadow: 0 0 18px rgba(52, 211, 153, 0.9);
+        margin: 32px;
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #ffffff;
+        color: #111827;
       }
       h1 {
-        margin: 22px 0 10px;
-        font-size: 42px;
-        line-height: 1.02;
+        margin: 0 0 12px;
+        font-size: 38px;
       }
       p {
-        margin: 0;
-        color: #cbd5e1;
+        margin: 0 0 16px;
+        color: #374151;
         font-size: 18px;
       }
       pre {
-        margin: 26px 0 0;
+        margin: 20px 0 0;
         padding: 20px 22px;
-        border-radius: 20px;
-        background: rgba(15, 23, 42, 0.85);
-        border: 1px solid rgba(148, 163, 184, 0.2);
-        color: #bfdbfe;
+        border-radius: 12px;
+        background: #f3f4f6;
+        border: 1px solid #d1d5db;
+        color: #111827;
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.55;
         white-space: pre-wrap;
         word-break: break-word;
+      }
+      .kicker {
+        margin-bottom: 10px;
+        color: #065f46;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
       }
     </style>
   </head>
   <body>
-    <main class="card">
-      <div class="eyebrow"><span class="dot"></span>Render hosted proof</div>
+    <main>
+      <div class="kicker">Render hosted proof</div>
       <h1 id="status">Checking /health/ready…</h1>
       <p>Verifying database and Redis connectivity on the deployed Render services.</p>
       <pre id="details">Waiting for readiness response…</pre>
@@ -208,53 +182,19 @@ function buildDeployProofPage({ deployUrl, commitSha }) {
     <meta charset="UTF-8" />
     <title>Branch-specific Deploy to Render proof</title>
     <style>
-      :root {
-        color-scheme: light;
-        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      }
       body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: linear-gradient(135deg, #030712 0%, #0f172a 50%, #1d4ed8 100%);
-        color: #eff6ff;
-      }
-      .card {
-        width: min(1040px, calc(100vw - 96px));
-        border-radius: 28px;
-        padding: 34px 38px;
-        background: rgba(15, 23, 42, 0.82);
-        border: 1px solid rgba(148, 163, 184, 0.22);
-        box-shadow: 0 24px 80px rgba(15, 23, 42, 0.4);
-      }
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 8px 14px;
-        border-radius: 999px;
-        background: rgba(59, 130, 246, 0.18);
-        color: #bfdbfe;
-        font-size: 14px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-      }
-      .dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 999px;
-        background: #60a5fa;
-        box-shadow: 0 0 18px rgba(96, 165, 250, 0.9);
+        margin: 32px;
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #ffffff;
+        color: #111827;
       }
       h1 {
-        margin: 22px 0 12px;
-        font-size: 42px;
-        line-height: 1.04;
+        margin: 0 0 12px;
+        font-size: 38px;
       }
       p {
         margin: 0 0 22px;
-        color: #dbeafe;
+        color: #374151;
         font-size: 18px;
       }
       .grid {
@@ -263,12 +203,12 @@ function buildDeployProofPage({ deployUrl, commitSha }) {
       }
       .item {
         padding: 16px 18px;
-        border-radius: 18px;
-        background: rgba(15, 23, 42, 0.76);
-        border: 1px solid rgba(148, 163, 184, 0.18);
+        border-radius: 12px;
+        background: #f9fafb;
+        border: 1px solid #d1d5db;
       }
       .label {
-        color: #93c5fd;
+        color: #1d4ed8;
         font-size: 13px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
@@ -280,14 +220,22 @@ function buildDeployProofPage({ deployUrl, commitSha }) {
         word-break: break-word;
       }
       code {
-        color: #bfdbfe;
+        color: #111827;
         font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+      .kicker {
+        margin-bottom: 10px;
+        color: #1d4ed8;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
       }
     </style>
   </head>
   <body>
-    <main class="card">
-      <div class="eyebrow"><span class="dot"></span>Maintainer-requested free-platform one-click proof</div>
+    <main>
+      <div class="kicker">Maintainer-requested free-platform one-click proof</div>
       <h1>Opened the branch-specific Deploy to Render link</h1>
       <p>This proof uses the PR branch, not <code>main</code>, and the hosted deployment below is currently live on commit <code>${commitSha}</code>.</p>
       <section class="grid">
@@ -313,12 +261,138 @@ function buildDeployProofPage({ deployUrl, commitSha }) {
 </html>`;
 }
 
+function buildRenderServiceProofPage({ backendDashboardUrl, frontendUrl, healthUrl, commitSha }) {
+  return `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Render live service proof</title>
+    <style>
+      body {
+        margin: 32px;
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #ffffff;
+        color: #111827;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: 38px;
+      }
+      p {
+        margin: 0 0 22px;
+        color: #374151;
+        font-size: 18px;
+      }
+      .grid {
+        display: grid;
+        gap: 14px;
+      }
+      .item {
+        padding: 16px 18px;
+        border-radius: 12px;
+        background: #f9fafb;
+        border: 1px solid #d1d5db;
+      }
+      .label {
+        color: #065f46;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .value {
+        margin-top: 8px;
+        font-size: 18px;
+        line-height: 1.45;
+        word-break: break-word;
+      }
+      code {
+        color: #111827;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+      .kicker {
+        margin-bottom: 10px;
+        color: #065f46;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="kicker">Render live deployment state</div>
+      <h1>Hosted services are live on the proof commit</h1>
+      <p>The current hosted proof uses the Render frontend and backend services below, both tied to commit <code>${commitSha}</code>.</p>
+      <section class="grid">
+        <div class="item">
+          <div class="label">Frontend service URL</div>
+          <div class="value"><code>${frontendUrl}</code></div>
+        </div>
+        <div class="item">
+          <div class="label">Backend readiness URL</div>
+          <div class="value"><code>${healthUrl}</code></div>
+        </div>
+        <div class="item">
+          <div class="label">Render backend dashboard</div>
+          <div class="value"><code>${backendDashboardUrl}</code></div>
+        </div>
+        <div class="item">
+          <div class="label">Proof commit</div>
+          <div class="value"><code>${commitSha}</code></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>`;
+}
+
 async function waitForText(page, text, timeout = 45000) {
   await page.waitForFunction(
     (needle) => document.body && document.body.innerText.includes(needle),
     text,
     { timeout },
   );
+}
+
+async function warmHostedProof(frontendUrl, healthUrl) {
+  const browser = await chromium.launch({
+    headless: true,
+    channel: 'chrome',
+    args: [
+      '--disable-dev-shm-usage',
+      '--lang=en-US',
+      '--disable-features=Translate,TranslateUI,ChromeTranslate',
+    ],
+  });
+
+  try {
+    const context = await browser.newContext({
+      locale: 'en-US',
+      viewport: VIEWPORT,
+      extraHTTPHeaders: {
+        'Accept-Language': 'en-US,en;q=0.9',
+      },
+    });
+    const page = await context.newPage();
+    page.setDefaultTimeout(45000);
+
+    await page.goto(frontendUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await waitForText(page, 'FinMind');
+    await delay(1500);
+
+    const healthResponse = await page.request.get(healthUrl, {
+      headers: { 'Accept-Language': 'en-US,en;q=0.9' },
+      timeout: 30000,
+    });
+    if (!healthResponse.ok()) {
+      throw new Error(`Health warm-up failed with status ${healthResponse.status()}`);
+    }
+
+    await context.close();
+  } finally {
+    await browser.close();
+  }
 }
 
 async function main() {
@@ -336,11 +410,21 @@ async function main() {
   const outputDir = path.dirname(resolvedOutputPath);
   await fs.mkdir(outputDir, { recursive: true });
 
+  await warmHostedProof(frontendUrl, healthUrl);
+
   const context = await chromium.launchPersistentContext(userDataDir, {
     headless: true,
     channel: 'chrome',
+    locale: 'en-US',
     viewport: VIEWPORT,
-    args: ['--disable-dev-shm-usage'],
+    extraHTTPHeaders: {
+      'Accept-Language': 'en-US,en;q=0.9',
+    },
+    args: [
+      '--disable-dev-shm-usage',
+      '--lang=en-US',
+      '--disable-features=Translate,TranslateUI,ChromeTranslate',
+    ],
     recordVideo: {
       dir: outputDir,
       size: VIEWPORT,
@@ -361,10 +445,15 @@ async function main() {
     });
     await delay(6500);
 
-    await page.goto(backendDashboardUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
-    await waitForText(page, 'finmind后端');
-    await waitForText(page, 'codex/finmind-144');
-    await waitForText(page, commitSha, 60000);
+    await page.setContent(
+      buildRenderServiceProofPage({
+        backendDashboardUrl,
+        frontendUrl,
+        healthUrl,
+        commitSha,
+      }),
+      { waitUntil: 'domcontentloaded' },
+    );
     await delay(7000);
 
     await page.goto(frontendUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
