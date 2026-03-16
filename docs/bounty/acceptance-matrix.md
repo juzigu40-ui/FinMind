@@ -1,10 +1,10 @@
 # FinMind acceptance matrix
 
-Status meanings used in this submission:
+Status labels used below:
 
-- `Maintainer-run`: the repo contains a concrete deploy path and validate path for the claimed route, but this submission does not attach a live provider run for that target.
-- `CI-validated`: the repo path is exercised by branch CI on this submission.
-- `Provider-validated`: a real provider deployment was brought up and rechecked with the repo validate path.
+- `Maintainer-run`: the branch contains a deploy path and a validate path, but no live provider run is attached here.
+- `CI-validated`: the branch path is exercised in CI on this submission.
+- `Provider-validated`: a real provider deployment was brought up and rechecked with the branch validate path.
 
 | Platform | Deploy command | Validate command | Proof status | Live URL |
 | --- | --- | --- | --- | --- |

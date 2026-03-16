@@ -1,8 +1,8 @@
 # Maintainer review walkthrough
 
-This is the shortest route through the acceptance material for `#308`.
+If you reopen `#308`, this is the shortest route through the attached evidence.
 
-## 1. Maintainer-requested free-platform one-click proof (Render)
+## 1. Render hosted proof
 
 - Branch-specific Deploy to Render link: `https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2Fjuzigu40-ui%2FFinMind%2Ftree%2Fcodex%2Ffinmind-144-deploy-bounty`
 - Frontend URL: `https://finmind-frontend-sexs.onrender.com`
@@ -11,7 +11,7 @@ This is the shortest route through the acceptance material for `#308`.
 - Hosted deploy proof video: `docs/demo/render-one-click-deploy-proof.mp4`
 - Free-tier note: Render may cold-start after idle, so the first request can take longer than a warm check.
 
-The current Render proof pack is tied to deployed commit `63ab7de`. The archived `a622e03` and `f5667cd` artifacts remain under `docs/bounty/provider-proofs/render/archived/`.
+The current Render proof pack is tied to deployed commit `63ab7de`. The older `a622e03` and `f5667cd` packs remain under `docs/bounty/provider-proofs/render/archived/`.
 
 ## 2. Local review
 
@@ -40,7 +40,7 @@ Run:
 ./scripts/review-k8s.sh
 ```
 
-That path installs the Helm chart into kind, runs `helm test`, then rechecks the branch-local frontend and backend through the same smoke path.
+That path installs the Helm chart into kind, runs `helm test`, and then rechecks the frontend and backend through the same smoke path.
 
 Tilt uses the same repo path:
 
